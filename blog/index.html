@@ -58,6 +58,20 @@
     }
 </style>
 
+
+<style>
+	@media only screen and (max-width: 600px) {
+	  .that {
+		display: none;
+	  }         
+	}
+	@media only screen and (min-width: 600px) {
+	  .why {
+		display: none;
+	  }
+	}
+  </style>
+
   <body>
 	<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -65,32 +79,65 @@
         </div>
     </div>
     
-    <div class="container-fluid sticky-top" style="background-color: #000 !important;">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="../index.html" class="navbar-brand">
-                    <img src="../whitelogo.png" style="width: 17.5%; float: inline-start; padding-top: 6.5%;">
-                    <h2 class="text-white">BUSINESS CLUB</h2>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>	
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="../index.html" class="nav-item nav-link">Home</a>
-                        <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
-                        <a href="blog/index.html" class="nav-item nav-link" style="color: white;">Blogs</a>
-                        <a href="../modules.html" class="nav-item nav-link">Modules</a>
-                        <a href="../contact/contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+	<div class="container-fluid sticky-top" style="background-color: #000 !important;">
+		<div class="why">
+		  <div class="container" style="height: 100px;">
+			  <nav class="navbar navbar-expand-lg navbar-dark p-0">
+				  <div style="width: 80%; padding-top: 4.5%;">
+				  <a href="../index.html">
+					  <img src="../whitelogo.png" style="width: 18%;float: inline-start; padding-top: 6%;">
+					  <h2 class="text-white">BUSINESS CLUB</h2>
+				  </a>
+				  </div>
+				  <div style="padding-right: 5px; padding-top: 20px;">
+				  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+					  data-bs-target="#navbarCollapse" style="height: 50px;">
+					  <span class="navbar-toggler-icon" style="width: 35px; height: 40px;"></span>
+				  </button>
+				  </div>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					  <div class="navbar-nav ms-auto" style="background-color: black;">
+						  <a href="../index.html" class="nav-item nav-link">Home</a>
+						  <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
+						  <a href="../blog/index.html" class="nav-item nav-link"  style="color: white;">Blogs</a>
+						  <a href="../modules.html" class="nav-item nav-link">Modules</a>
+						  <a href="../contact/contact.html" class="nav-item nav-link">Contact</a>
+					  </div>
+				  </div>
+			  </nav>
+		  </div>
+	  </div>
+	  </div>
+	  
+	  
+		<div class="container-fluid sticky-top" style="background-color: #000 !important;">
+			<div class="that">
+		  <div class="container">
+			  <nav class="navbar navbar-expand-lg navbar-dark p-0">
+				  <a href="../index.html" class="navbar-brand">
+					  <img src="../whitelogo.png" style="width: 17.5%; float: inline-start; padding-top: 10%;">
+					  <h2 class="text-white" style="padding-top: 3%;">BUSINESS CLUB</h2>
+				  </a>
+				  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+					  data-bs-target="#navbarCollapse">
+					  <span class="navbar-toggler-icon"></span>	
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					  <div class="navbar-nav ms-auto">
+						  <a href="../index.html" class="nav-item nav-link">Home</a>
+						  <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
+						  <a href="../blog/index.html" class="nav-item nav-link"  style="color: white;">Blogs</a>
+						  <a href="../modules.html" class="nav-item nav-link">Modules</a>
+						  <a href="../contact/contact.html" class="nav-item nav-link">Contact</a>
+					  </div>	
+				  </div>
+			  </nav>
+		  </div>
+	  </div>
+	  </div>
 	  <!-- END nav -->
 
-
+<div class="that">
 	  <section id="home" class="video-hero js-fullheight" style="height: 700px; background-image: url(../blog-modified.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="container">
 	<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
@@ -156,18 +203,26 @@
 
 	</div>
 	</section>
+</div>
 
 		<div id="page">
 			<div class="container">
 				<header id="masthead" class="site-header">
 				<div class="site-branding">
+					<div class="that">
 					<h1 style="padding-left: 44%; padding-bottom: 10px;" >B-Blog</h1>
 					<h2 class="site-description">The official blog of Business Club, IIT Kharagpur</h2>
+					</div>
+					<div class="why">
+						<h1 style="padding-left: 35%; padding-bottom: 10px;" >B-Blog</h1>
+						<h2 class="site-description">The official blog of Business Club, IIT Kharagpur</h2>
+					</div>
 				</header>
 				<!-- #masthead -->
 				<div id="content" class="site-content">
 					<div id="primary" class="content-area column full">
 						<main id="main" class="site-main">
+						<div class="that">
 						<div class="grid portfoliogrid">
 						
 							<article class="hentry" style="float: left">
@@ -309,7 +364,152 @@
 												</article>
 							
 						</div>
+					</div>
 						<!-- .grid -->
+
+						<div class="why">
+							<div class="grid portfoliogrid">
+							
+								<article class="hentry" style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="private_jets.html"><img src="../plane.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="private_jets.html" rel="bookmark">Private Jets: Airlines' New Frontier</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>June 02, 2020</a>
+								</header>
+								</article>
+								
+								<article class="hentry" style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="nuclear_industry.html"><img src="../nuclear.jpg"attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="nuclear_industry.html" rel="bookmark">Nuclear's Meltdown</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>November 29, 2019</a>
+								</header>
+								</article>
+								
+								<article class="hentry" style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="economic_implementation.html"><img src="../economy.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="economic_implementation.html" rel="bookmark">Economic Implications of Artic Cap melting</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>April 10, 2018</a>
+								</header>
+								</article>
+								
+								<article class="hentry"	style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="oil.html"><img src="../oil.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="oil.html" rel="bookmark">Oil: Lifeline Of The Middle East</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>November 04, 2017</a>
+								</header>
+								</article>
+								
+								<article class="hentry" style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="world_bank.html"><img src="../bank.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="world_bank.html" rel="bookmark">World Bank and Its Failure</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>October 4, 2017</a>
+								</header>
+								</article>
+								
+								<article class="hentry" style="padding-left: 40px;">
+								<header class="entry-header">
+								<div class="entry-thumbnail">
+									<a href="jayalalithaa.html"><img src="../demise.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+								</div>
+								<br>
+								<h2 class="entry-title"><a href="jayalalithaa.html" rel="bookmark">Jayalalithaa&rsquo;s Demise: End of an era</a></h2>
+								<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+								<a class='portfoliotype' href='http://bclub.co.in/'>December 21, 2016</a>
+								</header>
+								</article>
+	
+								<article class="hentry" style="padding-left: 40px;">
+									<header class="entry-header">
+									<div class="entry-thumbnail">
+										<a href="money.html"><img src="../money.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+									</div>			<br>
+									<h2 class="entry-title"><a href="money.html" rel="bookmark">Money: Hoax or Reality?</a></h2>
+									<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+									<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+									<a class='portfoliotype' href='http://bclub.co.in/'>December 17, 2016</a>
+									</header>
+									</article>
+	
+									<article class="hentry" style="padding-left: 40px;">
+										<header class="entry-header">
+										<div class="entry-thumbnail">
+											<a href="subprime_lending.html"><img src="../lending.avif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+										</div>			<br>
+										<h2 class="entry-title"><a href="subprime_lending.html" rel="bookmark">Subprime Auto Lending</a></h2>
+										<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+										<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+										<a class='portfoliotype' href='http://bclub.co.in/'>December 17, 2016</a>
+										</header>
+										</article>
+	
+										<article class="hentry" style="padding-left: 40px;">
+											<header class="entry-header">
+											<div class="entry-thumbnail">
+												<a href="brexit.html"><img src="../brexit.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+											</div>			<br>
+											<h2 class="entry-title"><a href="brexit.html" rel="bookmark">BREXIT</a></h2>
+											<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+											<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+											<a class='portfoliotype' href='http://bclub.co.in/'>December 17, 2016</a>
+											</header>
+											</article>
+	
+											<article class="hentry" style="padding-left: 40px;">
+												<header class="entry-header">
+												<div class="entry-thumbnail">
+													<a href="savetaxes.html"><img src="../tax.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+												</div>			<br>
+												<h2 class="entry-title"><a href="savetaxes.html" rel="bookmark">How to save taxes legally</a></h2>
+												<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+												<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+												<a class='portfoliotype' href='http://bclub.co.in/'>October 14, 2015</a>
+												</header>
+												</article>
+	
+												<article class="hentry" style="padding-left: 40px;">
+													<header class="entry-header">
+													<div class="entry-thumbnail">
+														<a href="intoconsult.html"><img src="../consult.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="p1"/ style="height: 150px; width: 275px;"></a>
+													</div>			<br>
+													<h2 class="entry-title"><a href="intoconsult.html" rel="bookmark">Peek into a consultant&#39;s life</a></h2>
+													<a class='portfoliotype' href='http://bclub.co.in/'>Business Club</a>
+													<a class='portfoliotype' href='http://bclub.co.in/'>IIT Kharagpur</a>
+													<a class='portfoliotype' href='http://bclub.co.in/'>September 04, 2015</a>
+													</header>
+													</article>
+								
+							</div>
+						</div>
 						
 						<br/>
 						

@@ -73,6 +73,19 @@ window.addEventListener("scroll", changeCss , false);
     }
 	</style>
 
+<style>
+	@media only screen and (max-width: 600px) {
+	  .that {
+		display: none;
+	  }         
+	}
+	@media only screen and (min-width: 600px) {
+	  .why {
+		display: none;
+	  }
+	}
+  </style>
+
   <body>
 	<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -80,32 +93,65 @@ window.addEventListener("scroll", changeCss , false);
         </div>
     </div>
     
-    <div class="container-fluid sticky-top" style="background-color: #000 !important;">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" class="navbar-brand">
-                    <img src="whitelogo.png" style="width: 17.5%; float: inline-start; padding-top: 6.5%;">
-                    <h2 class="text-white">BUSINESS CLUB</h2>
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>	
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
-                        <a href="blog/index.html" class="nav-item nav-link">Blogs</a>
-                        <a href="modules.html" class="nav-item nav-link" style="color: white;">Modules</a>
-                        <a href="contact/contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+	<div class="container-fluid sticky-top" style="background-color: #000 !important;">
+		<div class="why">
+		  <div class="container" style="height: 100px;">
+			  <nav class="navbar navbar-expand-lg navbar-dark p-0">
+				  <div style="width: 80%; padding-top: 4.5%;">
+				  <a href="index.html">
+					  <img src="whitelogo.png" style="width: 18%;float: inline-start; padding-top: 6%;">
+					  <h2 class="text-white">BUSINESS CLUB</h2>
+				  </a>
+				  </div>
+				  <div style="padding-right: 5px; padding-top: 20px;">
+				  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+					  data-bs-target="#navbarCollapse" style="height: 50px;">
+					  <span class="navbar-toggler-icon" style="width: 35px; height: 40px;"></span>
+				  </button>
+				  </div>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					  <div class="navbar-nav ms-auto" style="background-color: black;">
+						  <a href="index.html" class="nav-item nav-link">Home</a>
+						  <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
+						  <a href="blog/index.html" class="nav-item nav-link">Blogs</a>
+						  <a href="modules.html" class="nav-item nav-link" style="color: white;">Modules</a>
+						  <a href="contact/contact.html" class="nav-item nav-link">Contact</a>
+					  </div>
+				  </div>
+			  </nav>
+		  </div>
+	  </div>
+	  </div>
+	  
+	  
+		<div class="container-fluid sticky-top" style="background-color: #000 !important;">
+			<div class="that">
+		  <div class="container">
+			  <nav class="navbar navbar-expand-lg navbar-dark p-0">
+				  <a href="index.html" class="navbar-brand">
+					  <img src="whitelogo.png" style="width: 17.5%; float: inline-start; padding-top: 10%;">
+					  <h2 class="text-white" style="padding-top: 3%;">BUSINESS CLUB</h2>
+				  </a>
+				  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+					  data-bs-target="#navbarCollapse">
+					  <span class="navbar-toggler-icon"></span>	
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarCollapse">
+					  <div class="navbar-nav ms-auto">
+						  <a href="index.html" class="nav-item nav-link">Home</a>
+						  <a href="https://icc.bclub.co.in/" class="nav-item nav-link" target="_blank">ICC 2023</a>
+						  <a href="blog/index.html" class="nav-item nav-link">Blogs</a>
+						  <a href="modules.html" class="nav-item nav-link" style="color: white;">Modules</a>
+						  <a href="contact/contact.html" class="nav-item nav-link">Contact</a>
+					  </div>	
+				  </div>
+			  </nav>
+		  </div>
+	  </div>
+	  </div>
 	  <!-- END nav -->
 
-
+	<div class="that">
 	  <section id="home" class="video-hero js-fullheight" style="height: 700px; background-image: url(books.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
 		<div class="container">
 	<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
@@ -171,6 +217,7 @@ window.addEventListener("scroll", changeCss , false);
 
 	</div>
 	</section>
+</div>
 
   <style>
       div.sticky {
@@ -191,7 +238,7 @@ window.addEventListener("scroll", changeCss , false);
       font-family: sans-serif;  
       cursor: pointer;
       padding: 12px;
-      min-width: 170px;
+      min-width: 100px;
       border: 0px;
     -webkit-transition: background-color 100ms linear;
     -ms-transition: background-color 100ms linear;
@@ -218,9 +265,16 @@ window.addEventListener("scroll", changeCss , false);
   </style>
 
   <div class="sticky">
-    <a href="#Strategy"><button class="btn btn-dark" id="strat">Strategy</button></a>
-    <a href="#Analytics"><button class="btn btn-dark" id="anal">Analytics</button></a>
-    <a href="#Finance"><button class="btn btn-dark" id="fin">Finance</button></a>
+	<div class="that">
+    <a href="#Strategy"><button class="btn btn-dark" id="strat" style="width: 170px !important;">Strategy</button></a>
+    <a href="#Analytics"><button class="btn btn-dark" id="anal" style="width: 170px !important;">Analytics</button></a>
+    <a href="#Finance"><button class="btn btn-dark" id="fin" style="width: 170px !important;">Finance</button></a>
+	</div>
+	<div class="why">
+		<a href="#Strategy"><button class="btn btn-dark" id="strat">Strategy</button></a>
+		<a href="#Analytics"><button class="btn btn-dark" id="anal">Analytics</button></a>
+		<a href="#Finance"><button class="btn btn-dark" id="fin">Finance</button></a>
+		</div>
   </div>
 
 <!--Strat Start-->
@@ -228,7 +282,7 @@ window.addEventListener("scroll", changeCss , false);
 			<div class="container">
 				<header id="masthead" class="site-header">
 				<div class="site-branding">
-					<h1 style="padding-left: 44%; padding-bottom: 10px;" >Modules</h1>
+					<h1 style="text-align: center; padding-bottom: 10px;" >Modules</h1>
 					<h2 class="site-description">The official Module Page of Business Club, IIT Kharagpur</h2>
           <br>
           <h2 style="text-align: center; ">Strategy</h2>
